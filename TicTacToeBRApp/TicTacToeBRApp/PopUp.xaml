@@ -1,0 +1,25 @@
+﻿<Window x:Class="TicTacToeBRApp.PopUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToeBRApp"
+        mc:Ignorable="d"
+        Title="Seleção de Símbolo" Height="206" Width="285">
+    <Grid>
+        <Button x:Name="ButtonX" Content="X" HorizontalAlignment="Left" Margin="53,83,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="77" Height="22"/>
+        <Button x:Name="Button0" Content="0" HorizontalAlignment="Left" Margin="156,83,0,0" VerticalAlignment="Top" Width="80" Height="22" Click="Button0_Click"/>
+        <Label RenderTransformOrigin="0.5,0.5" Margin="35,26,20,101" Content="Escolha o Símbolo para Jogar!" FontSize="15">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.398"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+
+        </Label>
+        <Button x:Name="QuitButton" Content="SAIR" HorizontalAlignment="Center" Margin="0,122,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="67" Height="22"/>
+    </Grid>
+</Window>
